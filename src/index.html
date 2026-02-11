@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TravelLog - Catat perjalananmu dengan peta interaktif">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <link rel="manifest" href="./manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="TravelLog">
+    <link rel="apple-touch-icon" href="./icons/icon-152x152.png">
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <link rel="preload" href="styles/styles.css" as="style">
+    <link rel="preload" href="app.bundle.js" as="script">
+
+    <title>TravelLog</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Lompat ke konten utama</a>
+    
+    <header>
+      <div class="main-header container">
+        <a class="brand-name" href="#/">
+          <i class="fas fa-map-marked-alt"></i>
+          TravelLog
+        </a>
+
+        <nav id="navigation-drawer" class="navigation-drawer" aria-label="Navigasi utama">
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#/" aria-current="page">Beranda</a></li>
+            <li><a href="#/stories">Cerita Perjalanan</a></li>
+            <li><a href="#/add-story">Tambah Cerita</a></li>
+            <li><a href="#/about">Tentang</a></li>
+            <li id="auth-section">
+              <a href="#/login" id="login-link">Login</a>
+              <button id="logout-btn" style="display: none;" class="logout-button">Logout</button>
+            </li>
+            <li id="notification-section" style="display: none;">
+              <button id="notification-toggle" class="btn btn-outline" style="width: 100%; justify-content: center;">
+                <i class="fas fa-bell"></i> Subscribe Notifikasi
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <button id="drawer-button" class="drawer-button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navigation-drawer">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content" tabindex="-1"></main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-title">
+              <i class="fas fa-map-marked-alt"></i>
+              TravelLog
+            </h3>
+            <p class="footer-description">
+              Platform berbagi cerita perjalanan dengan peta interaktif. Catat setiap momen berharga dan inspirasi petualangan berikutnya.
+            </p>
+          </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Navigasi</h4>
+            <ul class="footer-links">
+              <li><a href="#/">Beranda</a></li>
+              <li><a href="#/stories">Cerita Perjalanan</a></li>
+              <li><a href="#/add-story">Tambah Cerita</a></li>
+              <li><a href="#/about">Tentang</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Kontak</h4>
+            <ul class="footer-links">
+              <li><i class="fas fa-envelope"></i> support@travellog.com</li>
+              <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
+              <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 TravelLog. All rights reserved. Dibuat dengan <i class="fas fa-heart" style="color: #ef4444;"></i> untuk para traveler.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
